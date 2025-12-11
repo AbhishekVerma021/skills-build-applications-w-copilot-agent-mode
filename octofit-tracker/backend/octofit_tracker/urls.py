@@ -32,5 +32,5 @@ router.register(r'workouts', WorkoutViewSet)
 router.register(r'leaderboard', LeaderboardViewSet)
 
 urlpatterns += [
-    path('', include(router.urls)),
+    path('api/', include(router.urls)),
 ]
